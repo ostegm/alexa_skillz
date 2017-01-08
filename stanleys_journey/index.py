@@ -84,7 +84,7 @@ def get_welcome_response():
 
     session_attributes = {}
     card_title = "Welcome"
-    speech_output = "We're about to embark on a magical journey. To get started, ask me about stanley. If you get lost, just ask for help."
+    speech_output = "We're about to embark on a magical journey. To get started, ask me to tell you about stanley. If you get lost, just ask for help."
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with the same text.
     reprompt_text = speech_output

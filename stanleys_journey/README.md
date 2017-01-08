@@ -1,4 +1,5 @@
 # Stanley's Journey
+![](stanley.png?raw=true)
 
 This is the tale of an unfortunate donkey named Stanley told by Alexa. Mostly just a fun way to explore the process of developing an alexa Skill. 
 
