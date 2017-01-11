@@ -105,8 +105,8 @@ def get_help_response():
 
 def stanleys_history():
     session_attributes = {}
-    card_title = "Stanley_Info"
-    speech_output = "So, you want to know about Stanley, right? Well, he's quite the character. He was born in the high sierra to a strong donkey daddy, and a beautiful mother. They loved him very much, but unforntunately he wasn't very smart. And to make matters worse, his back was pretty weak. As he got older, he was a burden on the family, so his parents took him into the woods one day and left him there to die. Isn't that sad? Do you want to know what happened next? If so ask me what happened next?"
+    card_title = "Stanley's Backstory"
+    speech_output = "So, you want to know about Stanley, right? Well, he's quite the character. He was born in the high sierra to a strong donkey daddy, and a beautiful mother. They loved him very much, but unforntunately he wasn't very smart. And to make matters worse, his back was pretty weak. As he got older, he was a burden on the family, so his parents took him into the woods one day and left him there to die. Isn't that sad? Do you want to know what happened next? If so, ask me what happened next?"
     reprompt_text = speech_output
     should_end_session = False
     return build_response(session_attributes, build_speechlet_response(card_title,speech_output,reprompt_text,should_end_session))
@@ -114,7 +114,7 @@ def stanleys_history():
 
 def what_happened_next():
     session_attributes = {}
-    card_title = "Stanley_middle"
+    card_title = "What Happened next?"
     speech_output = "Well, everyone thought he died that night. Eaten by a wolf or a bear. Stanley's parents were quite sad. But Stanley didn't die. In fact he was adopted by a mountain lion family and spent years training to be a vicious mountain lion. After several years, he was strong and mean. And most importantly, ready for revenge. Want to know more? Ask me how does it end?"
     reprompt_text = speech_output
     should_end_session = False
@@ -123,7 +123,7 @@ def what_happened_next():
 
 def how_does_it_end():
     session_attributes = {}
-    card_title = "Stanley_end"
+    card_title = "The end of Stanley's Story"
     speech_output = "Well one day, Stanley came down from the lions den to seek revenge. With blood on his mind, he entered the old stables. But when he saw his family, they were so shocked by his strength, wisdom and allure, that they accepted him back into the family. And they lived happily ever after. The end."
     reprompt_text = speech_output
     should_end_session = True
@@ -151,8 +151,8 @@ def build_speechlet_response(title, output, reprompt_text, should_end_session):
         },
         'card': {
             'type': 'Simple',
-            'title': 'SessionSpeechlet - ' + title,
-            'content': 'SessionSpeechlet - ' + output
+            'title': title,
+            'content': output
         },
         'reprompt': {
             'outputSpeech': {
