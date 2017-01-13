@@ -62,7 +62,7 @@ def on_intent(intent_request, session):
         return how_does_it_end()
     elif intent_name == "AMAZON.HelpIntent":
         return get_help_response()
-    elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
+    elif intent_name in ["AMAZON.CancelIntent", "AMAZON.StopIntent"]:
         return handle_session_end_request()
     else:
         raise ValueError("Invalid intent")
@@ -133,7 +133,7 @@ def how_does_it_end():
 
 def handle_session_end_request():
     card_title = "Session Ended"
-    speech_output = "I can't wait to tell you more about stanley soon. Goodbye."
+    speech_output = "Goodbye."
     # Setting this to true ends the session and exits the skill.
     should_end_session = True
     return build_response({}, build_speechlet_response(
