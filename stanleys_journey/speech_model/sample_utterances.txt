@@ -1,0 +1,26 @@
+TheBeginning tell me about stanley
+TheBeginning who is stanley
+WhatHappenedNext what happened next
+WhatHappenedNext what happens next
+HowDoesItEnd how does it end
+
+
+LearnToNavigate how does stanley learn to navigate
+LearnToNavigate how did stanley learn to navigate
+NextDay tell me about the next day
+
+BurnMarks stanley should follow the side with the burn marks
+BurnMarks follow the side with the burn marks
+
+NoBurnMarks stanley should follow the side without burn marks 
+NoBurnMarks follow the side without burn marks 
+
+BridgeDecisionStream stanley should follow the stream
+BridgeDecisionStream follow the stream
+
+BridgeDecisionNoStream stanley should head away from the stream
+BridgeDecisionNoStream he should head away from the stream
+
+
+
+

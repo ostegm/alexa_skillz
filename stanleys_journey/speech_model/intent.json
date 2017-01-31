@@ -1,0 +1,16 @@
+{
+  "intents": [
+  {"intent": "TheBeginning"},
+  {"intent": "WhatHappenedNext"},
+  {"intent": "HowDoesItEnd"},
+  {"intent": "LearnToNavigate"},
+  {"intent": "NextDay"},
+  {"intent": "BurnMarks"},
+  {"intent": "NoBurnMarks"},
+  {"intent": "BridgeDecisionStream"},
+  {"intent": "BridgeDecisionNoStream"},
+  {"intent": "AMAZON.HelpIntent"},
+  {"intent": "AMAZON.StopIntent"},
+  {"intent": "AMAZON.CancelIntent"}
+  ]
+}
