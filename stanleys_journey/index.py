@@ -62,7 +62,7 @@ def navigate_fork():
 @ask.intent("BridgeDecisionStream")
 def navigate_bridge_stream():
     speech_output = render_template('Lost_Stream')
-    return question(speech_output).simple_card(title=section, content=speech_output)
+    return statement(speech_output).simple_card(title=section, content=speech_output)
 
 
 @ask.intent("BridgeDecisionNoStream")
